@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Quan trọng cho mobile -->
   <title>870 In Hoa Toc - Download</title>
   <link rel="icon" href="app.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     header {
       background: #27ae60;
       color: white;
-      padding: 30px 0 20px 0;
+      padding: 20px 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header img {
@@ -28,20 +29,20 @@
     }
     h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 28px;
       font-weight: 600;
     }
     p {
-      font-size: 18px;
-      margin-top: 8px;
+      font-size: 16px;
+      margin-top: 6px;
     }
     main {
-      margin-top: 60px;
+      margin: 40px 15px;
     }
     .btn {
       display: inline-block;
       padding: 14px 28px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       color: white;
       background-color: #27ae60;
@@ -49,18 +50,43 @@
       border-radius: 6px;
       text-decoration: none;
       transition: background 0.3s, transform 0.2s;
-      margin: 10px;
+      margin: 10px auto;
     }
     .btn:hover {
       background-color: #219150;
       transform: translateY(-2px);
     }
+    .btn-donate {
+      background: #e67e22;
+    }
+    .btn-donate:hover {
+      background: #d35400;
+    }
     footer {
-      margin-top: 80px;
+      margin-top: 60px;
       padding: 15px;
       background: #2c3e50;
       color: white;
       font-size: 14px;
+    }
+
+    /* Responsive cho điện thoại */
+    @media (max-width: 600px) {
+      header img {
+        width: 60px;
+        height: 60px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .btn {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px;
+      }
     }
   </style>
 </head>
@@ -68,7 +94,7 @@
   <header>
     <img src="app.png" alt="870 In Hoa Toc Logo">
     <h1>870 In Hoa Toc</h1>
-    <p>Phần mềm hỗ trợ tính toán giá Photocopy tốc độ cao</p>
+    <p>Phần mềm hỗ trợ tính giá Photocopy tốc độ cao</p>
   </header>
 
   <main>
@@ -76,9 +102,9 @@
     <p>Bấm nút dưới đây để tải file cài đặt:</p>
     <a href="https://github.com/hieufg100/870-in-hoa-toc/releases/download/v1.0.2/870InHoaToc_Setup.exe" class="btn">⬇ Tải xuống ngay</a>
     
-    <h2 style="margin-top:50px;">☕ Ủng hộ tui ly cà phê</h2>
+    <h2 style="margin-top:40px;">☕ Ủng hộ tui ly cà phê</h2>
     <p>Nếu thấy phần mềm hữu ích, bạn có thể ủng hộ tác giả một ly cà phê 😍</p>
-    <a href="donate.html" class="btn" style="background:#e67e22;">Ủng hộ ngay</a>
+    <a href="donate.html" class="btn btn-donate">Ủng hộ ngay</a>
   </main>
 
   <footer>
